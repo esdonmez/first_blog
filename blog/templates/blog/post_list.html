@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>Seray's Blog</title>
+	</head>
+
+	<body>
+		{% for post in posts %}
+			<div>
+				<h1><a href="">{{ post.baslik }}</a></h1>
+				<p>{{ post.yazi|linebreaks }}</p>
+				<p>published: {{ post.yayinlanma_tarihi }}</p>
+			</div>
+		{% endfor %}
+	</body>
+</html>
